@@ -45,8 +45,8 @@ public class RecordDataInLog {
         return logs;
     }
 
-    private static class LogComparator implements Comparator<String> {
-        private static String SPLITER = " ";
+    private class LogComparator implements Comparator<String> {
+        private static final String SPLITER = " ";
         @Override
         public int compare(String log1, String log2) {
             String[] split1 = log1.split(SPLITER, 2);

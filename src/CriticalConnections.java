@@ -27,11 +27,10 @@ public class CriticalConnections {
 
         int[] rank = new int[n];
         Arrays.fill(rank,-2);
-        HashSet<List<Integer>> result = new HashSet<>();
+        HashSet<List<Integer>> result = new HashSet<>(connections);
         dfs(0, result, graph, 0, rank);
 
         return new ArrayList<>(result);
-
 
     }
 
